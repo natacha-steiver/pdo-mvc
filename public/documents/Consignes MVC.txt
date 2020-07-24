@@ -1,0 +1,11 @@
+Consignes MVC :
+
+1 - Installer la db
+2 - Partir d'un MVC vierge
+3 - Paramétrer la connexion
+4 - Intégrer le template
+5 - Exploser le template en partials
+6 - Placer les zones dynamiques dans le template
+7 - Créer la route par défaut (liste des posts)
+
+

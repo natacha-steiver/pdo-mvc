@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+
+<title>BACKOFFICE - Ajouter un enregistrement</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+<!-- Custom styles for this template -->
+<link href="css/admin/theme.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bootstrap theme</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="http://localhost:8888/LAB_2018_2019/public/www/" target="_blank">Site public</a></li>
+        <li class="active"><a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/">Dashboard</a></li>
+        <li><a href="#about">Getting started</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestion du contenu <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Posts</li>
+                <li><a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/posts">Liste des posts</a></li>
+                <li><a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/posts/add">Ajouter un post</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Catégories</li>
+                <li><a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/categories">Liste des catégories</a></li>
+                <li><a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/categories/add">Ajouter une catégorie</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Auteurs</li>
+                <li><a href="#">Liste des auteurs</a></li>
+                <li><a href="#">Ajouter un auteur</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+
+<h1>Ajout d'un post</h1>
+<div>
+  <a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/posts">
+    Retour vers la liste des posts
+  </a>
+</div>
+
+<form action="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/posts/add/insert" method="post">
+  <div>
+    <label for="titre">Titre</label>
+    <input type="text" name="titre" id="titre" />
+  </div>
+  <div>
+    <label for="slug">Slug</label>
+    <input type="text" name="slug" id="slug" />
+  </div>
+  <div>
+    <label for="texte">Texte</label>
+    <textarea name="texte" id="texte"></textarea>
+  </div>
+
+  <!-- MENU DEROULANT DYNAMIQUE -->
+  <div>
+    <label for="auteur">Auteur</label>
+    <select name="auteur" id="auteur">
+              <option value="2">
+          ben        </option>
+              <option value="1">
+          pascal        </option>
+          </select>
+  </div>
+  <!-- FIN MENU DEROULANT DYNAMIQUE -->
+
+  <!-- LISTE DYNAMIQUE DE CHECKBOXES -->
+  <div> <label>Catégories</label><br/>
+          <input type="checkbox" name="bidon" id="bidon" />
+          <label for="bidon">Bidon</label><br/>
+          <input type="checkbox" name="design-web" id="design-web" />
+          <label for="design-web">Design web</label><br/>
+          <input type="checkbox" name="developpement-backend" id="developpement-backend" />
+          <label for="developpement-backend">Développement backend</label><br/>
+          <input type="checkbox" name="developpement-frontend" id="developpement-frontend" />
+          <label for="developpement-frontend">Développement frontend</label><br/>
+      </div>
+  <!-- FIN LISTE DYNAMIQUE DE CHECKBOXES -->
+
+  <div>
+    <label for="media">Media</label>
+    <input type="file" name="media" id="media" />
+  </div>
+
+  <div><input type="submit" /></div>
+</form>
+      </div>
+      <!-- /container -->
+
+    <!-- Scripts -->
+        <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+PATTERN : users/login
+URL : ?users=login
+> Ctrl : usersControleur
+> Action: loginFormAction
+> Formulaire > $content1
+
+
+PATTERN : users/login/submit
+URL : ?users=submit
+> Ctrl : usersControleur
+> Action: loginSubmitAction
+> Vérifier dans la DB
+	> Si OK : rediriger vers une route backoffice
+		/admin/dashboard
+	> Sinon : on redirige vers users/login avec
+	  un message d'erreur
+
+
+

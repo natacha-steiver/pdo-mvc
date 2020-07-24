@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+
+<title>BACKOFFICE - Liste des posts</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+<!-- Custom styles for this template -->
+<link href="css/admin/theme.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bootstrap theme</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="http://localhost:8888/LAB_2018_2019/public/www/" target="_blank">Site public</a></li>
+        <li class="active"><a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/">Dashboard</a></li>
+        <li><a href="#about">Getting started</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestion du contenu <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Posts</li>
+                <li><a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/posts">Liste des posts</a></li>
+                <li><a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/posts/add">Ajouter un post</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Catégories</li>
+                <li><a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/categories">Liste des catégories</a></li>
+                <li><a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/categories/add">Ajouter une catégorie</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Auteurs</li>
+                <li><a href="#">Liste des auteurs</a></li>
+                <li><a href="#">Ajouter un auteur</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+
+<h1>Gestion des posts</h1>
+<div><a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/posts/add">Ajouter un enregistrement</a></div>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Titre</th>
+      <th>Slug</th>
+      <th>datePublication</th>
+      <th>Texte</th>
+      <th>Media</th>
+      <th>Auteur</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+        <tr>
+      <td>2</td>
+      <td>Material Design for Bootstrap</td>
+      <td>material-design-for-bootstrap</td>
+      <td>2017-02-02 00:00:00</td>
+      <td>Google designed a Material Design to make a web more beautiful. Twitter created a Bootstrap to suppo</td>
+      <td>http://lorempixel.com/750/390/technics/2</td>
+      <td>pascal</td>
+      <td>
+        <a href="#">Edit</a> |
+        <a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/posts/delete/2">Delete</a>
+      </td>
+    </tr>
+      <tr>
+      <td>1</td>
+      <td>Video Maker</td>
+      <td>video-maker</td>
+      <td>2017-01-01 00:00:00</td>
+      <td>Some things just look better in motion and in the highly competitive world of fashion, finding an ed</td>
+      <td>http://lorempixel.com/750/390/technics/1</td>
+      <td>pascal</td>
+      <td>
+        <a href="#">Edit</a> |
+        <a href="http://localhost:8888/LAB_2018_2019/backoffice_MVC/backoffice/www/posts/delete/1">Delete</a>
+      </td>
+    </tr>
+    </tbody>
+</table>
+      </div>
+      <!-- /container -->
+
+    <!-- Scripts -->
+        <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
